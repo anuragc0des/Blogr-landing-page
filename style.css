@@ -22,6 +22,10 @@
 
   --Very-dark-gray-blue: hsl(237, 17%, 21%);
   --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+
+  /* font family */
+  --overpass: "Overpass";
+  --ubuntu: "Ubuntu";
 }
 
 * {
@@ -30,22 +34,122 @@
   box-sizing: border-box;
 }
 
+.h-heading {
+  font-family: var(--overpass);
+}
+
+.p-para {
+  font-family: var(--ubuntu);
+}
+
 .container {
   width: 100%;
   height: fit-content;
 }
 
-.header {
+/* HEADER BACKGROUND DESIGN */
+
+.header-bg {
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(
-      to bottom,
-      hsl(13, 100%, 72%) 20%,
-      hsl(353, 100%, 62%) 70%
-    ),
-    url(./images/bg-pattern-intro-mobile.svg);
+    to bottom,
+    hsl(13, 100%, 72%) 20%,
+    hsl(353, 100%, 62%) 70%
+  );
+  border-radius: 0px 0px 0px 120px;
+}
 
+/* HEADER DESIGN */
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./images/bg-pattern-intro-mobile.svg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 200vh;
+  background-position: -250px -200px;
+  border-radius: 0px 0px 0px 120px;
+}
+
+/* HEADER - MOBILE NAV DESIGN */
+
+.header .mobile-nav {
+  width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* MOBILE NAV - LOGO DESIGN */
+.mobile-nav .logo-div .logo {
+  height: 40px;
+}
+
+/* MOBILE NAV - HAMBURGER DESIGN */
+.mobile-nav .hamburger .open-btn {
+  cursor: pointer;
+}
+
+/* MOBILE MENU DESIGN */
+.mobile-menu {
+  display: none;
+}
+
+/* HEADER TEXT DESIGN */
+.header-text {
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+
+.header-text .header-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.header-heading h1 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--White);
+}
+
+.header-heading p {
+  color: var(--Grayish-blue);
+  font-size: 1.2rem;
+  max-width: 310px;
+}
+
+.header-text .header-btns {
+  display: flex;
+  gap: 20px;
+}
+
+.header-btns button {
+  padding: 16px 12px;
+  width: 150px;
+  border-radius: 40px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.header-btns .right-btn {
+  border: none;
+  outline: none;
+  font-weight: 700;
+  color: var(--Light-red);
+}
+
+.header-btns .left-btn {
+  border: 1px solid var(--White);
+  outline: none;
+  background: transparent;
+  color: var(--White);
 }
