@@ -15,7 +15,7 @@
 
   /* Background gradient - Intro/CTA mobile nav: */
 
-  --Very-light-red: hsl(13, 100%, 72%);
+  --Very-light-red-bg: hsl(13, 100%, 72%);
   --Light-red: hsl(353, 100%, 62%);
 
   /* Background gradient - body: */
@@ -83,7 +83,7 @@
 
 /* MOBILE NAV - LOGO DESIGN */
 .mobile-nav .logo-div .logo {
-  height: 40px;
+  height: 30px;
 }
 
 /* MOBILE NAV - HAMBURGER DESIGN */
@@ -91,10 +91,91 @@
   cursor: pointer;
 }
 
+/* ////////////////////////////////// */
+
 /* MOBILE MENU DESIGN */
 .mobile-menu {
+  /* display: none; */
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  font-family: var(--overpass);
+}
+
+.mobile-menu .mobile-menu-list {
+  background-color: var(--White);
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.list-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-div .list-active {
+  font-size: 16px;
+}
+
+.list-div .list-light {
+  background-color: var(--Grayish-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.list-light span {
+  cursor: pointer;
+}
+
+.mobile-menu-list hr {
+  margin-top: 10px;
+}
+
+.mobile-menu-list .mobile-menu-list-signup {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.mobile-menu-list-signup a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.mobile-menu-list-signup .login {
+  color: var(--Very-dark-black-blue);
+}
+
+.mobile-menu-list-signup .signup {
+  color: var(--White);
+  background: linear-gradient(
+    to right,
+    hsl(13, 100%, 72%) 20%,
+    hsl(353, 100%, 62%) 70%
+  );
+  width: fit-content;
+  padding: 12px 30px;
+  border-radius: 40px;
+}
+
+.list-div .hidden {
   display: none;
 }
+
+/* ////////////////////////////////// */
 
 /* HEADER TEXT DESIGN */
 .header-text {
@@ -138,13 +219,18 @@
   font-size: 1rem;
   letter-spacing: 1px;
   cursor: pointer;
+  font-weight: 700;
 }
 
 .header-btns .right-btn {
   border: none;
   outline: none;
-  font-weight: 700;
   color: var(--Light-red);
+}
+
+.header-btns .right-btn:hover {
+  background-color: var(--Very-light-red);
+  color: var(--White);
 }
 
 .header-btns .left-btn {
@@ -152,4 +238,9 @@
   outline: none;
   background: transparent;
   color: var(--White);
+}
+
+.header-btns .left-btn:hover {
+  background-color: var(--White);
+  color: var(--Very-light-red);
 }
