@@ -47,6 +47,10 @@
   height: fit-content;
 }
 
+.hidden {
+  display: none;
+}
+
 /* HEADER BACKGROUND DESIGN */
 
 .header-bg {
