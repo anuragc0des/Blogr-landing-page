@@ -95,11 +95,8 @@
   cursor: pointer;
 }
 
-/* ////////////////////////////////// */
-
 /* MOBILE MENU DESIGN */
 .mobile-menu {
-  /* display: none; */
   width: 100%;
   position: absolute;
   top: 100px;
@@ -179,8 +176,6 @@
   display: none;
 }
 
-/* ////////////////////////////////// */
-
 /* HEADER TEXT DESIGN */
 .header-text {
   width: 100%;
@@ -247,4 +242,72 @@
 .header-btns .left-btn:hover {
   background-color: var(--White);
   color: var(--Very-light-red);
+}
+
+/* SECTION 1 DESIGN */
+
+.section1 {
+  width: 100%;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+/* SECTION 1 HEADING DESIGN */
+.section1 .section1-heading {
+  width: 100%;
+  text-align: center;
+}
+
+.section1-heading h2 {
+  color: var(--Very-dark-blue);
+  font-size: 1.6rem;
+}
+
+/* SECTION 1 - CONTENT DESIGN */
+.section1 .section1-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+/* SECTION 1 - IMAGE DESIGN */
+.section1-content .section1-mobile-imgdiv {
+  max-width: 450px;
+}
+
+.section1-mobile-imgdiv img {
+  width: 100%;
+}
+
+/* SECTION 1 - TEXT DESIGN */
+.section1-content .section1-all-texts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.section1-all-texts .section1-all-text-top-div,
+.section1-all-text-bottom-div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section1-all-texts h2 {
+  color: var(--Very-dark-blue);
+  font-size: 2rem;
+}
+
+.section1-all-texts p {
+  color: var(--Very-dark-grayish-blue);
+  font-size: 1.2rem;
+  line-height: 30px;
 }
