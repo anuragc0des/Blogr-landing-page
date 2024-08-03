@@ -61,7 +61,7 @@
     hsl(13, 100%, 72%) 20%,
     hsl(353, 100%, 62%) 70%
   );
-  border-radius: 0px 0px 0px 120px;
+  border-radius: 0px 0px 0px 128px;
 }
 
 /* HEADER DESIGN */
@@ -246,7 +246,8 @@
 
 /* SECTION 1 DESIGN */
 
-.section1 {
+.section1,
+.section3 {
   width: 100%;
   padding: 100px 20px;
   display: flex;
@@ -287,7 +288,8 @@
 }
 
 /* SECTION 1 - TEXT DESIGN */
-.section1-content .section1-all-texts {
+.section1-content .section1-all-texts,
+.section3-all-texts {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -301,12 +303,14 @@
   gap: 20px;
 }
 
-.section1-all-texts h2 {
+.section1-all-texts,
+.section3-all-texts h2 {
   color: var(--Very-dark-blue);
   font-size: 2rem;
 }
 
-.section1-all-texts p {
+.section1-all-texts,
+.section3-all-texts p {
   color: var(--Very-dark-grayish-blue);
   font-size: 1.2rem;
   line-height: 30px;
@@ -366,4 +370,23 @@
   color: var(--Grayish-blue);
   font-size: 1.1rem;
   line-height: 30px;
+}
+
+/* SECTION 3 DESIGN */
+
+.section3-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.section3-content .section3-mobile-imgdiv {
+  max-width: 450px;
+}
+
+.section3-mobile-imgdiv img {
+  width: 100%;
 }
