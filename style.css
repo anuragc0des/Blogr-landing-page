@@ -449,4 +449,43 @@ body {
 }
 
 @media (min-width: 992px) {
+  .header-bg {
+    min-height: 50vh;
+  }
+
+  /* HEADER DESIGN */
+  .header {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    background-image: url(./images/bg-pattern-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 320vh;
+    background-position: -200px -700px;
+    border-radius: 0px 0px 0px 0px;
+  }
+
+  .header .mobile-nav {
+    display: none;
+  }
+
+  .header .desktop-nav {
+    position: absolute;
+    width: 100%;
+    padding: 60px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .desktop-nav .desktop-nav-leftside {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .desktop-nav-leftside .desktop-menu {
+    display: flex;
+    gap: 30px;
+  }
 }
