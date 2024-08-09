@@ -192,8 +192,11 @@ body {
 }
 
 .header-text .header-heading {
+  max-width: 320px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 25px;
 }
 
@@ -438,4 +441,12 @@ body {
   list-style: none;
   color: var(--Grayish-blue);
   cursor: pointer;
+}
+
+.center {
+  font-style: italic;
+  letter-spacing: normal;
+}
+
+@media (min-width: 992px) {
 }
