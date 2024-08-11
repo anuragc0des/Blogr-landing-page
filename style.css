@@ -488,4 +488,8 @@ body {
     display: flex;
     gap: 30px;
   }
+
+  .list-div span {
+    color: var(--White);
+  }
 }
